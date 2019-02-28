@@ -1,0 +1,12 @@
+body {
+	max-width: 1024px;
+
+}
+
+header{
+	/*color de fondo*/
+	background: blue;  
+	/*color de letra*/
+	color:white;
+	text-align: center;
+}

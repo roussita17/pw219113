@@ -1,0 +1,31 @@
+body {
+	max-width: 1024px;
+
+}
+
+header{
+	/*color de fondo*/
+	background: blue;  
+	/*color de letra*/
+	color:white;
+	text-align: center;
+}
+
+
+
+
+/* li se modificara solo los que se indica(mas a la derecha)*/
+header nav ul li {
+	background: orange;
+	border-radius: 5px;
+	color: black;
+	display: inline-block;
+	width: 90px;
+
+}
+/*cuando ponga el mouse de un li*/
+header nav ul li:hover{
+	background: black;
+	color: orange;
+
+}

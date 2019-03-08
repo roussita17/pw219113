@@ -1,0 +1,39 @@
+body{
+	font-size: 16px; /* 1em*/
+	margin: 0px auto;
+
+	/*recomendacion del cliente (siempre se ebe hacer las recomendaciones [pr escrito y firmarse despues cuesta mas])*/
+	min-width: 1078px;
+	max-width: 1078px;
+}
+
+header input{
+	float: right;
+	margin-top: 15px;
+	margin-right: -200px;
+	position: relative; /* relativo a toda la pantalla y absolute tiene> referencia a la static*/
+}
+header nav{
+	margin-left: 220px;
+
+}
+
+header nav ul li{
+	border-bottom: 1px solid lightgray;
+	display: inline-block;
+	color:lightgray;
+	font-size: 1.8em;
+	margin-right: 15px;
+	/*text-decoration:underline; /*subrayado*/
+	padding-bottom: 2px;
+
+}
+
+#granthams{
+	margin-left: 25px; /*img izquierda*/
+	margin-top: 25px; /* img baje*/
+}
+
+#paint{
+	float:right;
+}

@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Practica O2 HTML5 + CSS3</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
 	<!--cuando hay uno solo elemento es id cuando hay mas de 2 repertidos es una clase -->
  	<header>
  		<img src="img/banner.png" alt="">
- 		<img src="img/granthmas.png" alt="">
- 		<img src="img/paint.png" alt="">
+ 		<img src="img/granthams.png" alt="" id="granthams">
+ 		<img src="img/paint.png" alt="" id="paint">
  		<input type="search" placeholder="Search">
  		<nav>
  			<ul>
@@ -22,13 +23,15 @@
  		</nav>
  	</header>
 
- 	<section>
- 		<article>
+ 	<section id="primerSeccion">
+ 		<article id="secc01art01">
  			<img src="img/slide.jpg" alt="">
  		</article>
 
- 		<article>
- 		   We can Ofter...
+ 		<article id="secc01art02">
+ 		    <span class="colorrosa letragrande nito">
+ 		     We can Ofter...
+ 		    </span>
  		   <ul>
  		   	  <li>Highly Competitive Prices</li>
  		   	  <li> Variable Data</li>	
@@ -41,29 +44,38 @@
  		   </ul>
  		</article>
 
- 		<img src="img/bg_offer.png" alt="">
+ 		<img src="img/bg_offer.png" alt="" id="bgoffer">
  	</section>
 
 
- 	<section>
+ 	<section id="segundaSeccion">
  		<article>
- 			01772 250207
+ 			<span class="colorrosa letramediana nito">
+ 			 01772 250207
+ 			</span>
  		</article>
  	</section>
 
- 	<section>
+ 	<section id="terceraSeccion">
  		<article>
  			<img src="img/cerdito.png" alt="">
- 			Save this spring 
+ 			 <span class="colorrosa nito">
+ 			  Save this spring 
+ 		     </span>
  			<br>
  			Faboluos discounts on canvas's and roll up's as
  			well as many offers
- 			<p>Find out more.. 
+ 			<p>
+ 				<span class="colorrosa nito">
+ 				 Find out more.. 
+ 				</span>
  		</article>
 
  		<article>
  			<img src="img/hoja.png" alt="">
- 			ECO Friendly 
+ 			 <span class="colorverde nito">
+ 			  ECO Friendly 
+ 		     </span>
  			<br>
  			ECO Friendly Materials used in our production process.
  			<br> 
@@ -74,18 +86,24 @@
 
  		<article>
  			<img src="img/new.png" alt="">
- 			Upload your file
+ 			 <span class="colorazul nito">
+ 			  Upload your file
+ 			 </span>
  			<br>
  			Making it easy to order your printing today.
  			Our upload facility enables you to send your
  			files directly to us. Use the notes section 
  			to inform us of your order,then sit back and wait for a member of our team to contact you.
  			<p>
- 			 Upload Your File Now...
+ 			 <span class="colorazul">
+ 			  Upload Your File Now...
+ 			 </span>
  		</article>
 
  		<article>
- 			Stay in touch 
+ 			 <span class="colorrosa letramediana">
+ 			  Stay in touch
+ 		     </span> 
  			<br>
  			Join our mailing list today <br>
  			<input type="email" placeholder="Email goes here">

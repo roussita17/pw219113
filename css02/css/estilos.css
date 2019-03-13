@@ -28,6 +28,10 @@ header nav ul li{
 	padding-bottom: 2px;
 
 }
+footer{
+	background: #4267B3;
+	font-size: 1.2em;
+}
 #bgoffer{
 	left: -35px;
     position: relative; /*no es margin porque es relativo*/
@@ -59,7 +63,6 @@ header nav ul li{
 #secc01art02{
 	margin-left: 50px;
 	width: 30%;
-
 }
  #secc01art02 ul{
  	list-style: none;
@@ -69,14 +72,38 @@ header nav ul li{
  	content: "•  "; /* el . es un texto */ 
  	color: #FF0099;
  }
+
  #segundaSeccion article{
    margin-right: 165px;
    text-align: right;  /*text-align se usa porque es texto y todo a la der si fueran ams de 1 es margin*/
-
  }
-
+#terceraSeccion article{
+	display: inline-block;
+	vertical-align: top;
+	width: 23%;
+}
+#secc03art04{
+  /* margin-top: 40px;*/
+  padding-top: 40px;
+}
+#terceraSeccion article img{
+	vertical-align: middle;
+}
+#terceraSeccion article input{
+	border-radius: 5px;
+}
+#terceraSeccion article input[type="button"]{
+	background: #8BC500;
+	color: white;
+}
+.colorazul{
+	color: #4267B3;
+}
 .colorrosa{
 	color: #FF0099;
+}
+.colorverde{
+	color: #8BC500;
 }
 .letragrande{
 	font-size: 3.5em;

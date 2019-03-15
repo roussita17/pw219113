@@ -29,9 +29,32 @@ header nav ul li{
 
 }
 footer{
+	border: 5px solid lightgray;
 	background: #4267B3;
-	font-size: 1.2em;
+	height: 220px;
+	margin: 0px auto;
+	min-width: 1078px;
+	max-width: 1078px;
+
 }
+#iconoFB{
+	left: 830px;
+	position: relative; /*no es margin porque es relativo*/
+	top: -247px;
+}
+
+#twitter{
+	left: 842px;
+	position: relative; /*no es margin porque es relativo*/
+	top: -247px;
+}
+
+#pareja{
+	left: 840px;
+	position: relative; /*no es margin porque es relativo*/
+	top: -260px;
+}
+
 #bgoffer{
 	left: -35px;
     position: relative; /*no es margin porque es relativo*/
@@ -87,7 +110,7 @@ footer{
   padding-top: 40px;
 }
 #terceraSeccion article img{
-	vertical-align: middle;
+	vertical-align: middle;	
 }
 #terceraSeccion article input{
 	border-radius: 5px;
@@ -95,6 +118,22 @@ footer{
 #terceraSeccion article input[type="button"]{
 	background: #8BC500;
 	color: white;
+}
+
+
+#cuartaSeccion article{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 65px;
+	margin-left: 40px;
+}
+#quintaSeccion article input[type="button"] {
+	background: #4267B3;
+	color: white;
+	border-radius: 15px;
+	left: 900px;
+	position: relative; /*no es margin porque es relativo*/
+	top: -30px;
 }
 .colorazul{
 	color: #4267B3;
@@ -110,6 +149,10 @@ footer{
 }
 .letramediana{
 	font-size: 2em;
+}
+.letrachica{
+	 font-size: 0.9em;
+	 color: white;
 }
 .nito{
 	font-weight: bold;

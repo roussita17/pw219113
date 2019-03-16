@@ -5,7 +5,7 @@ body{
 	max-width: 1078px;
 }
 header{
-    background:#F0F0F0;
+    background:#FBF8EF;
     height: 70px;
 }
 
@@ -28,7 +28,6 @@ header img{
     width: 80%;
     height: 45px;
 }
-
 #logo{
     position: relative;
     left:10px;
@@ -56,22 +55,28 @@ header img{
 }
 
 
-#segundaSeccion{
-    border: 2px solid gray;
+#segundaSeccion{  
     background: #2B2B2B;
-    height: 60px;
-    margin-bottom: 120px;
+    height: 80px;
+    margin-bottom: 140px;
 }
 
 #segundaSeccion article{
     display: inline-block;
 	vertical-align: top;
     width: 32.8%;
+    border-style: 2px dashed lightgray;
 }
 
 #terceraSeccion{
     background: #2B2B2B;
-    height: 150px;
+    height: 250px;
+    margin-top: -142px;
+}
+#terceraSeccion article{
+    display: inline-block;
+	vertical-align: top;
+    width: 25%;
 }
 
 .colorblanco{
@@ -92,4 +97,7 @@ header img{
 }
 .letragrande{
     font-size: 1.8em;
+}
+.colorazul{
+    color: cyan;
 }

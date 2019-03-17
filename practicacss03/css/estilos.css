@@ -2,31 +2,41 @@ body{
     margin: 0px auto;
 	/*recomendacion del cliente (siempre se ebe hacer las recomendaciones [pr escrito y firmarse despues cuesta mas])*/
 	min-width: 1078px;
-	max-width: 1078px;
+    max-width: 1078px;
+    background: black;
 }
 header{
-    background:#FBF8EF;
+    background:#f0f0f0;
     height: 70px;
 }
 
-
-header input[type="search"]{
+header input{
     text-align: right;
     font-size: 0.8em;
     color:gray;
     border-radius: 4px;
-    width: 95px;
+    width: 100px;
+    height: 28px;
     background: lightgray;
-    margin-left: 25px;
+    float: left;
+	margin-top: 10px;
+    margin-right: -20px;
+    margin-left: 78px;
+	position: relative;
+
 
 }
+footer{
+    background: #2B2B2B;
+    height: 270px;
+    margin-top: -185px;    
+}
 
-header img{
-    margin-top: -15px;
-    margin-left: 200px;
-    float: left;
-    width: 80%;
-    height: 45px;
+#menu{
+    position: relative;
+    left:50px;
+    width: 845px;
+    top:5px;
 }
 #logo{
     position: relative;
@@ -35,52 +45,143 @@ header img{
 
 }
 #rojo{
-    width: 80%;
+    border-radius: 5px;
+    width: 49%;
+    height: 30px;
+    right: 1.8px;
+	position: relative; /*no es margin porque es relativo*/
+    top: 3px;
+   
 }
 #verde{
-    width: 80%;
+    border-radius: 5px;
+    width: 51%;
+    height: 32px;
+    left: 350px;
+	position: relative; /*no es margin porque es relativo*/
+    bottom: 56px;
 }
 #claro{
-    width: 80%;
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    left: 720px;
+	position: relative; /*no es margin porque es relativo*/
+	bottom: 115px;
 }
 #primeraSeccion{
     background:#2B2B2B;
-    height: 250px;
+    height: 310px;
 }
+
+#primeraSeccion nav ul li{
+	color:gray;
+	padding-left: 30px;
+	font-size: 1em;
+    padding-bottom: 2px;
+    list-style: none;
+
+}
+
 
 #primeraSeccion article{
     display: inline-block;
 	vertical-align: top;
-    width: 19%;
+    width: 20.2%;
+    margin-left: -6.5px;
+    margin-right: -3.2px;
 }
+#secc01art02{
+    /* margin-top: 40px;*/
+    margin-top: 12px;
+    background:#b4d052;
+    padding-top: 20px;
+    padding-right: -2px;
+    height: 255px;
+  }
 
+#secc01art03{
+    /* margin-top: 40px;*/
+    margin-top: 12px;
+    background:#545454;
+    padding-top: 20px;
+    padding-right: -2px;
+    height: 255px;
+  }
+
+#secc01art04{
+    /* margin-top: 40px;*/
+    margin-top: 12px;
+    background:#d42d3f;
+    padding-top: 20px;
+    padding-right: -2px;
+    height: 255px;
+  }
+  #secc01art05{
+    /* margin-top: 40px;*/
+    margin-top: 12px;
+    background: #d2d2d2;
+    padding-top: 20px;
+    height: 255px;
+  }
+ 
 
 #segundaSeccion{  
+    border-top: 2px solid #444444;
     background: #2B2B2B;
-    height: 80px;
-    margin-bottom: 140px;
+    height: 120px;
+    margin-bottom: 150px;
+    margin-top: -8px;
+
 }
 
 #segundaSeccion article{
+ 
+    margin-top: 23px;
+    padding-left: 90px;
     display: inline-block;
-	vertical-align: top;
-    width: 32.8%;
-    border-style: 2px dashed lightgray;
+    vertical-align: top;
+
+  
 }
 
-#terceraSeccion{
-    background: #2B2B2B;
-    height: 250px;
-    margin-top: -142px;
-}
+
+
 #terceraSeccion article{
     display: inline-block;
 	vertical-align: top;
     width: 25%;
+    border-top: 1.5px dashed gray;
+    margin-top: 17px;
+    width: 18%;
+    border-top: 1px dashed gray;
+    margin-top: 11px;
+    margin-left: 11px;
+    padding-left: 10%;
+    padding-top: 12px;
+
+}  
+#secc03art01{
+    left: 22px;
+    position: relative; /*no es margin porque es relativo*/
+    bottom: 6px; 
+ 
 }
+#secc03art02{
+    left: 52px;
+    position: relative; /*no es margin porque es relativo*/
+    bottom: 6px; 
+}
+#secc03art03{
+    left: 95px;
+    position: relative; /*no es margin porque es relativo*/
+    bottom: 5px;  
+}
+
 
 .colorblanco{
     color: white;
+    
 }
 
 .colorgris{
@@ -88,16 +189,76 @@ header img{
 }
 .nito{
     font-weight: bold;
+    text-align: center;
 }
 .letrachica{
     font-size: 0.8em;
 }
 .letramediana{
     font-size: 1em;
+  
 }
 .letragrande{
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 .colorazul{
-    color: cyan;
+    color: #4a6e82;
 }
+.colorgris{
+    color:gray;
+}
+.colorgrisesito{
+    color:lightgray;
+}
+.mayor{
+    left: 48.5px;
+	position: relative; /*no es margin porque es relativo*/
+    top: 80px;
+    color: rgba(255, 255, 255, 1.5);
+    background: rgb(107, 106, 106,0.5);
+    padding-top: 9px;
+    padding-left: 13px;
+    padding-bottom: 9px;
+}
+.mayor2{
+    right: 7px;
+	position: relative; /*no es margin porque es relativo*/
+    top: 61px;
+    color: rgba(255, 255, 255, 1.5);
+    background: rgb(107, 106, 106,0.5);
+    padding-top: 9px;
+    padding-left: 13.5px;
+    padding-bottom: 8px;
+}
+.mayor3{
+    right: 35px;
+    left: 29px;
+	position: relative; /*no es margin porque es relativo*/
+    top: 77px;
+    color: rgba(255, 255, 255, 1.5);
+    background: rgb(107, 106, 106,0.5);
+    padding-top: 9px;
+    padding-left: 13px;
+    padding-bottom: 7px;
+}
+.mayor4{
+    left: 91px;
+	position: relative; /*no es margin porque es relativo*/
+    top: 12px;
+    color: rgba(255, 255, 255, 1.5);
+    background: rgb(107, 106, 106,0.5);
+    padding-top: 9px;
+    padding-left: 12px;
+    padding-bottom: 6px;
+}
+.der{
+   margin-left: 120px;
+   padding-top: -5px;
+   
+}
+
+
+
+
+
+

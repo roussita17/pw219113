@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Audio/Video HTML5</title>
+	<style type="text/css">
+		video{
+			border-radius: 5px;
+			box-shadow:  10px 10px blue; /* recorre la luz a der y abajo a 3 parametros der, abajo y color*/
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	
+	Etiquetas para Audio y Video. <br>
+ <!-- controls atributo para manipular y loop hace que sea indifinida la cancion se termina y se detiene, autoplay carga automatico, preload= carga el video del navegador sin darle play ESTO EN MOVIL NO CONVIENE PORQUEE EL USUARIO HARA UQE GASTE DATOS-->
+		<!-- source ignora aquellos formatos que no soporta el navegador y pone solo el que es compatible con el-->
+		<audio controls loop autoplay preload="auto">
+			<source src="media/audio/audiohtml5.mp4">
+		</audio>
+		<audio controls loop autoplay preload="auto">
+		    <source src="media/audio/musica.mp3">	
+		</audio>
+		<br>
+
+		<video  controls loop autoplay preload="auto">
+			<source src="media/video/Chrome_ImF.mp4">
+			<source src="media/video/Chrome_ImF.ogv">
+			<source src="media/video/Chrome_ImF.webm">	
+		</video>
+		<video  controls loop autoplay preload="auto">
+			<source src="media/video/html5.mp4">
+			<source src="media/video/html5.webm">
+		</video>
+		
+	
+
+
+</body>
+</html>

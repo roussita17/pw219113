@@ -1,0 +1,12 @@
+
+
+
+127.0.0.1:80 / LOCALHOST:80
+MAN = WINDOW
+LAN = MAC 
+
+X = Sistema Operativo
+A = Servidor Apache (Servidor Web)
+M = Mysql (MariaDB) <--- SE BASA EN MYSQL PERO MAS EFICIENTE
+P = PHP
+P = PERL

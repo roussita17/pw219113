@@ -1,0 +1,13 @@
+Notificaciones:Javascript <---- bajo entornos https o http 
+
+  <---- Notificaciones: detectan las notificaciones del navegador 
+
+Configuracion del navegador:
+
+default <---- No autorizado, No denegado 
+granted <---- autorizadopara notificaciones
+denied <----- no autorizado para notifiaciones 
+
+
+
+

@@ -1,0 +1,6 @@
+Web Workers 
+  Javascript 
+    Hilos de ejecucion independientes 
+     1.-Son llamados desde la pagina 
+     2.- Actualizan el estado y mandan mensajes
+     

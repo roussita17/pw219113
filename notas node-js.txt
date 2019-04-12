@@ -1,0 +1,22 @@
+Xampp = Apache (Servidor Web)
+
+
+crud= create,read,update y delete
+abcc = altas,bajas,cambios y consultas
+
+JS= cliente 
+Node.js = del lado del servidor Servidor web
+
+PAQUETE = express.js (establece las rutas que quieres para tu pagina )
+
+verbos http = get (OBTENER UNA PAGINA AL SERVIDOR, post(manda datos al servidor),put (atualizacion DE DATOS ),delete(borrar DATOS AL SERVIDOR)
+
+paquetes = js 
+npm = Administraodr de paquetes de node 
+
+
+morgan permite ver la solicitud dentro del servidor como bitacora ,set,post y get y post
+
+ejs = motor de plantillas permite meter html sin batallar al javascript
+nodemon = --dev modo desarrollador para monitoriar la app 
+es un demonio o proceso que quiere los cambios que tiene la app y se reinicia solo

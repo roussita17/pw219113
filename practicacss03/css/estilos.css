@@ -177,7 +177,7 @@ footer{
     position: relative; /*no es margin porque es relativo*/
     bottom: 5px;  
 }
-
+/*pseudoelementos, etiquetas,identificadores y clases*/
 
 .colorblanco{
     color: white;

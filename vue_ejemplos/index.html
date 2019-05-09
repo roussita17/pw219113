@@ -8,26 +8,28 @@
 
 	<div id="app">
 		<h1>{{ titulo }}</h1> 
+		<input type="text" v-model="nuevaFruta" @keyup.enter="agregarFruta">
+		<!-- esto hace que se conecte a la data en vue para los datos y todo lo que se escriba aqui se copea directamente a nuevaFruta-->
+		<button @click="agregarFruta" >Agregar Fruta</button> <!-- @es una abreviatura de v-on:click para los eventos del boton-->
 		<ul>
 			<li v-for=" fruta of frutas ">{{ fruta }}</li> 
 			<!-- fruta of frutas es una variable dentro de un for-->
 		</ul>	
 		<ul>
-			<li v-for=" fruta of frutas2 ">{{ fruta.nombre }} - {{ fruta.Cantidad }}
+			<li v-for=" fruta of frutas2 ">
+				<!--{{ fruta.nombre }} - {{ fruta.Cantidad }}-->
+				<input type="text" v-model="fruta.Cantidad">
+				{{ fruta.nombre }}
+				<button @click="fruta.Cantidad++"> + </button>
+				<button @click="fruta.Cantidad--"> - </button>
+
 			<span v-if=" fruta.Cantidad == 0 "> no hay en almacen</span>
 			</li>
 		</ul>	
+		<h4>Total: {{ sumarFrutas }}</h4>
 	</div>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/vue">
-        	
-        </script>
-
-        <script src="js/primervue.js">
-        	
-        </script>
-
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="js/primervue.js"></script>
 </body>
 </html>
 

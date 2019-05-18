@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuex.js ejemplos</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vuex@3.1.1/dist/vuex.js"></script>
+
+</head>
+<body>
+     <div id="app">
+         <titulo></titulo>
+     </div>
+     <script>
+         //Componentes 
+         Vue.component('titulo',{
+             template:
+             `
+                <div>
+                    <h1>Numero{{numero}}</h1>
+                    <hijo></hijo>
+                </div>    
+             `,
+             computed: {
+                 ...Vuex.mapState(['numero']) //permite sacar mas variable y las regresa en un arreglo
+                  //... hace que tome una cantidad indefinida de parametros
+                  // equivalente a numero = mapState([' numero '])
+
+
+             }
+         }); //primer parametro es el nombre de la etiqueta
+           Vue.component('hijo',{
+            template:
+             `
+                <div>
+                    <h1>Numero{{numero}}</h1>
+                    <button @click="aumentar"> +</button>
+                    <button @click="disminuir(2)"> - </button>
+                    <button @click="obtenerPersonas"> Personas </button>
+                    <ul v-for=" p of personas.results">
+                        <li>{{ p.name.first }} {{ p.name.last }}</li>
+                    </ul>    
+                
+                </div>    
+             `,
+             //una mutacion se manda llamar con el commit
+             computed: {
+                 ...Vuex.mapState(['numero','personas'])
+                  //permite sacar mas variable y las regresa en un arreglo
+                  //... hace que tome una cantidad indefinida de parametros
+                  // equivalente a numero = mapState([' numero '])
+             },
+             methods:{
+                 ...Vuex.mapMutations(['aumentar','disminuir']),
+                 ...Vuex.mapActions(['obtenerPersonas'])
+             }
+             
+
+           });
+           //Vuex que es el almacenamiento entre componente
+           const store = new Vuex.Store({
+               state:{ //valores ocmpartidos
+                numero: 10, //este compoente no coresponde nada esta apartesin usar props ni events hacia atras entre hijos y padres
+                personas: []
+
+               },
+               //metodos que modifican a los estados(STATES) se llaman MUTACIONES
+               mutations:{
+                   aumentar(state){
+                       state.numero++
+                   },
+                   disminuir(state,n){
+                       state.numero -= n
+                   },
+                   llenarPersonas(state,personasWeb){
+                       state.personas = personasWeb
+
+                   }
+               },
+               actions:{
+                   obtenerPersonas: async function({ commit }){
+                      const data = await  fetch('https://randomuser.me/api/?results=20');
+                      const personas = await data.json(); // await convierte los datos a JSON
+                      commit('llenarPersonas',personas);
+
+                   }
+
+               }
+           });
+
+            new Vue({
+                el:'#app',
+                store: store // que reconozca el store que jala de la const store
+
+
+
+            });
+     </script>
+    
+</body>
+ <!--http://localhost:8080/crud-mysql-vueejemplo/vuexejemplos.html-->
+</html>

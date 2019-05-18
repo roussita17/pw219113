@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Componentes en Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="componentes/saludovue.js"></script>
+    <script src="componentes/contadorvue.js"></script>
+</head>
+<body>
+
+    <!-- Componente: conjuto de elementos agregados en un segmento de codigo -->
+    <div id="app">
+        <saludo></saludo>
+        <contador></contador>
+        <!--se puede poner la misma etiqueta(contador) n veces,
+         pero cada instancia es independiente aun asi teniendo el msmo codigo-->
+    </div>
+
+    <script>
+
+        const app = new Vue ({
+            el: '#app' //elementos de vue
+ 
+        })
+    </script>
+    <!--http://localhost:8080/crud-mysql-vueejemplo/componentesvue.html-->
+</body>
+</html>
